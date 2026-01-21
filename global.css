@@ -1,0 +1,67 @@
+/* global.css */
+
+/* Gör hela sidan till flexbox för att kunna placera footer längst ner */
+html, body {
+    height: 100%;          /* Viktigt för flexbox att fylla hela fönstret */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+   
+    color: #333;
+    display: flex;
+    flex-direction: column; /* Header + main + footer i kolumn */
+
+}
+
+/* Header */
+header {
+     text-align: center;
+    padding: 15px 0;
+    background-color: #66262671;
+    font-size: 0.9em;
+    color: #120404;
+}
+
+/* Main tar upp resterande utrymme */
+main {
+    flex: 1;               /* Fyller hela tillgängliga höjden mellan header och footer */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+p{
+    margin-left: 2em;
+}
+
+/* Footer längst ner */
+footer {
+    text-align: center;
+    padding: 15px 0;
+  background-color: #66262650;
+    font-size: 0.9em;
+    color: #000000;
+}
+
+/* Länkar */
+a {
+    color: #4d76d7;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Sektioner och listor */
+section {
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 1px;
+}
+
+li {
+    margin-bottom: 10px;
+}
