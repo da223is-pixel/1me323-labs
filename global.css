@@ -17,7 +17,7 @@ html, body {
 header {
      text-align: center;
     padding: 15px 0;
-    background-color: #66262671;
+    background-color: #06b94590;
     font-size: 0.9em;
     color: #120404;
 }
@@ -37,7 +37,7 @@ p{
 footer {
     text-align: center;
     padding: 15px 0;
-  background-color: #66262650;
+  background-color: #06b9455c;
     font-size: 0.9em;
     color: #000000;
 }
@@ -64,4 +64,23 @@ ul {
 
 li {
     margin-bottom: 10px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.badge.done {
+  background-color: #c6f6d5;
+  color: #276749;
+}
+
+.badge.wip {
+  background-color: #fefcbf;
+  color: #975a16;
 }
