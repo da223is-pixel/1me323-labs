@@ -2,6 +2,6 @@
 
 ## Markdown format
 
-[Detta repository innehåller lab D.]
+[Detta repository innehåller lab 1.]
 
 ** Diana Ahmadi **
