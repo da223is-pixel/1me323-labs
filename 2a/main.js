@@ -53,7 +53,11 @@ const movieElement = document.getElementById ("movie");
 movieElement.innerHTML =`
 <h2> ${movie.name} ${movie.year}</h2>
 <p> director:${movie.director.firstName} </p>
-<p>Actors: ${movie.mainActors.join(", ")}</p>
+<p>Actors: ${movie.mainActors.join(", ")}</p>`;
 
-`;
+for (const key in person ) {
+  console.log(key, person[key]);  
+}//  med for in får man allt i objeketet och detta var det t.ex person.
 
+const keys = Object.keys(movie);
+console.log(keys);// omvandlar alla nyklarna till en array. 
