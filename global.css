@@ -84,3 +84,13 @@ li {
   background-color: #fefcbf;
   color: #975a16;
 }
+
+.light-theme {
+  background: white;
+  color: black;
+}
+
+.dark-theme {
+  background: #1a1a1a;
+  color: #f0f0f0;
+}
