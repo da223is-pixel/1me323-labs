@@ -1,0 +1,19 @@
+{
+  "restaurant": "Ahmadi Restaurant",
+  "dishes": [
+    {
+      "id": 1,
+      "name": "Kabuli Pulao",
+      "price": 15,
+      "vegetarian": false,
+      "allergies": ["nuts"]
+    },
+    {
+      "id": 2,
+      "name": "Bolani",
+      "price": 6,
+      "vegetarian": true,
+      "allergies": ["gluten"]
+    }
+  ]
+}
