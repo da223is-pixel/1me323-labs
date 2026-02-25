@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="main.js"></script>
+</head>
+
+<body>
+  <h1>Interaktiva formulärfält</h1>
+
+  <div id="preview">
+    <p id="preview-text">Hej! Jag ändras när du justerar kontrollerna.</p>
+  </div>
+
+  <label for="message">Skriv ett meddelande:</label>
+  <input type="text" id="message" placeholder="Skriv här...">
+
+  <label for="size">Textstorlek: <span id="size-value">12</span>px</label>
+  <input type="range" id="size" value="12" min="10" max="30">
+
+  <label for="opacity">Genomskinlighet: <span id="opacity-value">100</span>px</label>
+  <input type="range" id="opacity" value="0" min="0" max="100">
+
+  <label for="align"> Textjustering:</label>
+  <select id="align">
+    <option value="left">Vänster</option>
+    <option value="center">Centrerad</option>
+    <option value="right"> Höger</option>
+  </select>
+
+  <label for="font">Typsnitt:</label>
+  <select id="font">
+    <option value="Arial, sans-serif"> Arial</option>
+    <option value="Georgia, serif"> Georgia</option>
+    <option value="Courier New, monospace"> Courier New</option>
+  </select>
+
+
+  <input type="checkbox" id="bold">
+  <label for="bold">Fetstil</label>
+
+  <input type="checkbox" id="underline">
+  <label for="underline">Understruken</label>
+
+  <label for="bg-color"> Bakgroundsfäreg</label>
+  <input id="bg-color" type="color" value="#ffffff">
+
+  <label for="text-color">Textfärg:</label>
+  <input type="color" id="text-color" value="#000000">
+
+
+  <form>
+    <label for="name">Namn:</label>
+    <input id="name" type="text" minlength="2" required>
+    <p id ="name-status"></p>
+
+    <label for="email">E-post:</label>
+    <input id="email" type="email" required>
+       <p id ="email-status"></p>
+  </form>
+
+</body>
+
+</html>
