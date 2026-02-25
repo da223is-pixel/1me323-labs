@@ -1,0 +1,39 @@
+
+form{
+    max-width: 500px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: inline;
+    width: auto;
+}
+
+
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid blue;
+    outline-offset:1px;
+}
+legend {
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input:required,
+select:required {
+    border-left: 4px solid orange;
+
+}
+input:optional,
+select:optional{
+ border-left: 4px solid gray;
+}
+
+label:has(+ input:required)::after,
+label:has(+ section:required)::after {
+    content: " *";
+    color: red;
+}
