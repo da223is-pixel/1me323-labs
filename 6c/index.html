@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../global.css">
+    <script type="module" src="main.js"></script>
+
+</head>
+<body>
+  <h1>Felhantering</h1>
+  <div id="output"></div>  
+  
+<p id="error-message"></p>
+
+<form id="product-form">
+  <label for="product-name">Produktnamn</label>
+  <input type="text" id="product-name" required>
+
+  <label for="product-price">Pris (kr)</label>
+  <input type="number" id="product-price" step="0.01" required>
+
+  <button type="submit">Lägg till produkt</button>
+</form>
+
+<p id="message" class="hidden"></p>
+
+<h2>Produkter</h2>
+<ul id="product-list"></ul>
+    
+</body>
+</html>
